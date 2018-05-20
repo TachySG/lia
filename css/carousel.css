@@ -17,7 +17,7 @@
   color: #fff;
   background-color: #36b8a4;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 500px) {
   .articles .featured-article .carousel-header {
     top: 5px;
   }
@@ -138,7 +138,7 @@
 @media screen and (max-width: 992px) {
   .articles .carousel .carousel-aside-container ol.carousel-indicators {
     text-align: center;
-    top: 10px;
+    top: 15px;
   }
 }
 .articles .carousel .carousel-aside-container ol.carousel-indicators li {
