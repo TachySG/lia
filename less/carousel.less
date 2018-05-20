@@ -39,6 +39,10 @@
             z-index: 1;
             color: #fff;
             background-color: @green;
+            @media screen and (max-width: 768px){
+                top:5px;
+            }
+
             h1 {
                 font-size: 24px;
                 margin: 25px 35px 15px;
@@ -99,6 +103,10 @@
                 opacity: 1;
                 transition: 0.4s ease;
                 -webkit-transition: 0.4s ease;
+                @media screen and (max-width: 500px){
+                    width: 40px;
+                    height: 40px;
+                }
                 &:hover {
                     background-color: @darkgray;
                     transition: 0.4s ease;
@@ -106,6 +114,10 @@
                 }
                 img {
                     padding: 13px 20px;
+                    @media screen and (max-width: 500px) {
+                        padding: 10px 15px;
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -146,6 +158,8 @@
                     border:none;
                     border-radius: 0; 
                     padding: 0px 5px;
+                    transition: 0.4s ease;
+                    -webkit-transition: 0.4s ease;
                     @media screen and (max-width: 992px){
                         border: 1px solid @black;
                         border-radius: 100%;
@@ -154,13 +168,27 @@
                         text-align: center;
                         color: transparent;
                     }
+                    @media screen and (max-width: 768px) {
+                        width: 12px;
+                        height: 12px;
+                    }
                     &.active {
-                        color:@green;   
+                        color:@green;  
+                        transition: 0.4s ease;
+                        -webkit-transition: 0.4s ease; 
                         @media screen and (max-width: 992px){
                             color: transparent;
                             background-color: @green;
                             border: 1px solid @green;
                         }                 
+                    }
+                    &:hover {
+                        color: @green;
+                        transition: 0.4s ease;
+                        -webkit-transition: 0.4s ease;
+                        @media screen and (max-width: 992px){
+                            color: transparent;
+                        }
                     }
                 }
             }
