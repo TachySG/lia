@@ -16,9 +16,11 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+
 </head>
 
-<body>
+<body id="mainbody">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -29,11 +31,33 @@
       <div id="bar2"></div>
       <div id="bar3"></div>
   </div>
-
+   <div class="menu-wrapper">
+      <ul class="main-menu">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About Us</a></li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+            <ul class="dropdown-menu">
+              <li><a href="#">Action</a></li>
+              <li><a href="#">Another action</a></li>
+              <li><a href="#">Something else here</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">Separated link</a></li>
+              <li role="separator" class="divider"></li>
+              <li><a href="#">One more separated link</a></li>
+            </ul>
+          </li>
+          <li><a href="#">News</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">Proposal</a></li>
+      </ul>
+      <div class="logo">
+          <img src="images/logo.png" alt="">
+      </div>
+  </div>
   <section class="header">
     <div class="container">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <div class="header-text">
             <h1>LIFE INSURANCE
     ASSOCIATION
@@ -41,9 +65,141 @@
             <p>Everything you need to know about life insurance.</p>
           </div>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-8">
           <img src="img/header.jpg" class="img-responsive">
         </div>
+      </div>
+    </div>
+  </section>
+
+<<<<<<< HEAD
+  <section class="latest work-anim">
+    <div class="container">
+      <span class="labelinput">Get the latest on life insurance in your&nbsp;inbox</span><input type="text" placeholder="E-Mail">
+=======
+  <section class="featured-article">
+    <div class="container">
+      <div class="row articles">
+          <div class="col-md-12 featured-article">
+              <div class="carousel-header">
+                  <h1>FEATURED GUIDE</h1>
+              </div>
+              <div id="article-carousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner-container">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner carousel slide" role="listbox" id="articleList">
+                        <div class="item active" data-slide-number="0">
+                          <img src="img/carousel/first-featured/article-1.jpg" alt="">
+                        </div>
+                        <div class="item" data-slide-number="1">
+                          <img src="img/carousel/first-featured/article-1.jpg" alt="">
+                        </div>
+                        <div class="item" data-slide-number="2">
+                          <img src="img/carousel/first-featured/article-1.jpg" alt="">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <div class="carousel-buttons">
+                          <a class="left carousel-control" href="#article-carousel" role="button" data-slide="prev">
+                            <img src="img/carousel/left-arrow.png" alt="">
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          
+                          <a class="right carousel-control" href="#article-carousel" role="button" data-slide="next">
+                            <img src="img/carousel/right-arrow.png" alt="">
+                            <span class="sr-only">Next</span>
+                          </a>
+                      </div>
+                  </div>
+                      
+                  <div class="carousel-aside-container">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#article-carousel" data-slide-to="0" class="active">1</li>
+                        <li data-target="#article-carousel" data-slide-to="1">2</li>
+                        <li data-target="#article-carousel" data-slide-to="2">3</li>
+                      </ol>
+                      <!-- display content -->
+                      <div class="display-content carousel-content" id="carousel-text"></div>
+
+                      <div class="carousel-contents" id="slide-content" style="display: none;">
+                          <div class="content" id="slide-content-0">
+                            YOUR GUIDE TO LIFE INSURANCE
+                            <p class="date">
+                              26/04/2017
+                            </p>
+                          </div>
+                          <div class="content" id="slide-content-1">YOUR GUIDE TO LIFE INSURANCE
+                            <p class="date">
+                              26/04/2017
+                            </p></div>
+                          <div class="content" id="slide-content-2">YOUR GUIDE TO LIFE INSURANCE
+                            <p class="date">
+                              26/04/2017
+                            </p></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- <div class="col-md-2">2</div> -->
+      </div>
+      <div class="row articles">
+          <div class="col-md-12 featured-article">
+              <div class="carousel-header">
+                  <h1>FEATURED ARTICLE</h1>
+              </div>
+              <div id="article-carousel-a" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner-container">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner carousel slide" role="listbox" id="articleList">
+                        <div class="item a active" data-slide-number="0">
+                          <img src="img/carousel/first-featured/article-1.jpg" alt="">
+                        </div>
+                        <div class="item a" data-slide-number="1">
+                          <img src="img/carousel/first-featured/article-1.jpg" alt="">
+                        </div>
+                        <div class="item a" data-slide-number="2">
+                          <img src="img/carousel/first-featured/article-1.jpg" alt="">
+                        </div>
+                      </div>
+                      <!-- Controls -->
+                      <div class="carousel-buttons">
+                          <a class="left carousel-control" href="#article-carousel-a" role="button" data-slide="prev">
+                            <img src="img/carousel/left-arrow.png" alt="">
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          
+                          <a class="right carousel-control" href="#article-carousel-a" role="button" data-slide="next">
+                            <img src="img/carousel/right-arrow.png" alt="">
+                            <span class="sr-only">Next</span>
+                          </a>
+                      </div>
+                  </div>
+                      
+                  <div class="carousel-aside-container">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#article-carousel-a" data-slide-to="0" class="active">1</li>
+                        <li data-target="#article-carousel-a" data-slide-to="1">2</li>
+                        <li data-target="#article-carousel-a" data-slide-to="2">3</li>
+                      </ol>
+                      <!-- display content -->
+                      <div class="display-content carousel-content" id="carousel-text-a"></div>
+
+                      <div class="carousel-contents" id="slide-content-a" style="display: none;">
+                          <div class="content" id="slide-content-a-0">
+                            RETIREMENT INCOME &ndash; HOW MUCH IS ENOUGH?
+                            <p class="date">
+                              05/05/2018
+                            </p>
+                          </div>
+                          <div class="content" id="slide-content-a-1">Content-2</div>
+                          <div class="content" id="slide-content-a-2">Content-3</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
     </div>
   </section>
@@ -51,28 +207,114 @@
   <section class="latest">
     <div class="container-fluid">
 
+>>>>>>> db22508752bb9936be4b2ee1f4578e808ce345ba
     </div>
   </section>
 
+  <section class="threebox">
+    <div class="container">
+      <div class="row">
+        <!-- box 1 -->
+        <div class="col-sm-4">
+          <div class="box box1 work-anim">
+            <div class="box_overlay">
+
+            </div>
+            <div class="box_text">
+              NEWS
+            </div>
+            <div class="right_arrow">
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+              </style>
+              <path class="st0" d="M4.7,98.8l-2.1-2.2l45.3-45.3c0.5-0.5,0.5-1.4,0-2L2.6,4.2L4.7,2c0.5-0.5,1.4-0.5,1.9,0l47.5,47.4
+                c0.5,0.5,0.5,1.4,0,2L6.6,98.8C6.1,99.4,5.2,99.4,4.7,98.8L4.7,98.8z"/>
+              </svg>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- box 2-->
+        <div class="col-sm-4">
+          <div class="box box2 work-anim">
+            <div class="box_overlay">
+
+            </div>
+            <div class="box_text">
+              INSURANCE<br>
+              CALCULATOR
+            </div>
+            <div class="right_arrow">
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+              </style>
+              <path class="st0" d="M4.7,98.8l-2.1-2.2l45.3-45.3c0.5-0.5,0.5-1.4,0-2L2.6,4.2L4.7,2c0.5-0.5,1.4-0.5,1.9,0l47.5,47.4
+                c0.5,0.5,0.5,1.4,0,2L6.6,98.8C6.1,99.4,5.2,99.4,4.7,98.8L4.7,98.8z"/>
+              </svg>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- box 3 -->
+        <div class="col-sm-4">
+          <div class="box box3 work-anim">
+            <div class="box_overlay">
+
+            </div>
+            <div class="box_text">
+              BLOG
+            </div>
+            <div class="right_arrow">
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+              </style>
+              <path class="st0" d="M4.7,98.8l-2.1-2.2l45.3-45.3c0.5-0.5,0.5-1.4,0-2L2.6,4.2L4.7,2c0.5-0.5,1.4-0.5,1.9,0l47.5,47.4
+                c0.5,0.5,0.5,1.4,0,2L6.6,98.8C6.1,99.4,5.2,99.4,4.7,98.8L4.7,98.8z"/>
+              </svg>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
   <footer>
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3">
-            <div class="copyright">
-              &copy;&nbsp;Life Insurance Association of Singapore
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="menu-footer">
-              Terms of Use
-              Privacy Policy
-              Contact Us
-            </div>
-          </div>
-          <div class="col-sm-3">
+          <div class="col-md-3 col-md-push-9">
             <div class="logo">
               <img src="img/lia-logo.png">
+            </div>
+          </div>
+          
+          <div class="col-md-5 col-md-push-1">
+            <div class="menu-footer">
+              <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-md-pull-8">
+            <div class="copyright">
+              &copy;&nbsp;Life Insurance Association of&nbsp;Singapore
             </div>
           </div>
         </div>
@@ -84,6 +326,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="js/carousel.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
