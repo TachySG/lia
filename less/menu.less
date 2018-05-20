@@ -33,13 +33,17 @@ body{
  	font-family: @gotham;
     position: relative;
     background-color: white;
-    padding-top: 80px;
     font-size: 16px;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
 }
-
+.cont{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
 .menu-button{
     position: absolute;
     top: 35px;
@@ -91,7 +95,7 @@ body{
 .menu-wrapper{
 	position: absolute;
 	top: -200px;
-	right: -100%;
+	right: -280px;
 	width: 280px;
 	z-index: 10;
 	.transition(all 0.4s @easePower3);
