@@ -217,6 +217,10 @@
 		e.preventDefault();
 		$('#popup-01').modal('show');
 	})
+	$('.box').click(function(e){
+		e.preventDefault();
+		$('#popup-01').modal('show');
+	})
 })(jQuery)
 
 
