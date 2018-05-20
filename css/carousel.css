@@ -157,7 +157,7 @@
 }
 @media screen and (max-width: 992px) {
   .articles .carousel .carousel-aside-container ol.carousel-indicators li {
-    border: 1px solid #333333;
+    border: 1px solid #999999;
     border-radius: 100%;
     width: 15px;
     height: 15px;
