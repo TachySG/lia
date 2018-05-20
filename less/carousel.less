@@ -126,15 +126,16 @@
         }
         .carousel-aside-container {
             /*width: ~"calc(100% - 75%)";*/
-            width: 24%;
+            width: 25%;
             vertical-align: bottom;
             /*display: table-cell;*/
             display: inline-block;
-            margin-left: -4px;
+            margin-left: -5px;
             @media screen and (max-width: 992px){
                 width:100%;
                 display: table;
                 margin-top: -63px;
+                margin-left: 0;
             }
             ol.carousel-indicators {
                 position: relative;
@@ -207,6 +208,10 @@
                 padding: 15px;
                 font-weight: 100;
                 line-height: 45px;
+                @media screen and (max-width: 1200px){
+                    font-size: 28px;
+                    line-height: normal;
+                }
                 @media screen and (max-width: 992px){
                     line-height: normal;
                 }
