@@ -53,11 +53,9 @@ body {
   background-color: #36b8a4;
   margin-bottom: 4px;
   position: relative;
-}
-.menu-button:hover #bar1,
-.menu-button:hover #bar2,
-.menu-button:hover #bar3 {
-  background-color: #36b8a4;
+  -webkit-transition: background-color 0.5s linear;
+  /* For Safari 3.1 to 6.0 */
+  transition: background-color 0.5s linear;
 }
 .menu-button.on {
   position: fixed;
@@ -65,7 +63,7 @@ body {
 .menu-button.on #bar1,
 .menu-button.on #bar2,
 .menu-button.on #bar3 {
-  background-color: #36b8a4;
+  background-color: white;
 }
 .menu-button.on #bar1 {
   -ms-transform: rotate(45deg);
@@ -74,8 +72,8 @@ body {
   /* For Safari 3.1 to 6.0 */
   transform: rotate(45deg);
   top: 11px;
-  transition: transform 0.2s cubic-bezier(0.6, 0.01, 0.49, 0.99);
-  -webkit-transition: -webkit- transform 0.2s cubic-bezier(0.6, 0.01, 0.49, 0.99);
+  transition: transform 0.2s cubic-bezier(0.6, 0.01, 0.49, 0.99), background-color 0.2s linear 0.5s;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.6, 0.01, 0.49, 0.99), background-color 0.2s linear 0.5s;
 }
 .menu-button.on #bar2 {
   opacity: 0;
@@ -87,8 +85,8 @@ body {
   /* For Safari 3.1 to 6.0 */
   transform: rotate(-45deg);
   top: -7px;
-  transition: transform 0.2s cubic-bezier(0.6, 0.01, 0.49, 0.99);
-  -webkit-transition: -webkit- transform 0.2s cubic-bezier(0.6, 0.01, 0.49, 0.99);
+  transition: transform 0.2s cubic-bezier(0.6, 0.01, 0.49, 0.99), background-color 0.2s linear 0.5s;
+  -webkit-transition: -webkit-transform 0.2s cubic-bezier(0.6, 0.01, 0.49, 0.99), background-color 0.2s linear 0.5s;
 }
 @media screen and (max-width: 991px) {
   .menu-button {
@@ -100,4 +98,51 @@ body {
     top: 25px;
     left: 25px;
   }
+}
+.menu-wrapper {
+  position: absolute;
+  top: -100px;
+  right: -100%;
+  width: 280px;
+  z-index: 10;
+  -webkit-transition: all 0.4s cubic-bezier(0.6, 0.01, 0.49, 0.99);
+  /* For Safari 3.1 to 6.0 */
+  transition: all 0.4s cubic-bezier(0.6, 0.01, 0.49, 0.99);
+}
+.menu-wrapper ul.main-menu {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  padding: 80px 25px 15px;
+  background: #36b8a4;
+}
+.menu-wrapper li {
+  border-bottom: 1px solid white;
+}
+.menu-wrapper li a {
+  text-transform: uppercase;
+  font-weight: 100;
+  width: 100%;
+  padding: 15px 0;
+  color: white;
+  text-decoration: none;
+  display: block;
+}
+.menu-wrapper li a:hover,
+.menu-wrapper li a:focus {
+  text-decoration: none;
+}
+.menu-wrapper li:last-child {
+  border-bottom: 0;
+}
+.menu-wrapper .logo {
+  width: 200px;
+  padding: 20px 25px;
+}
+.menu-wrapper .logo img {
+  width: 100%;
+}
+.menu-wrapper.on {
+  top: 0;
+  right: 0;
 }
