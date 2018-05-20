@@ -112,7 +112,8 @@
   }
 }
 .articles .carousel .carousel-aside-container {
-  width: calc(100% - 75%);
+  /*width: ~"calc(100% - 75%)";*/
+  width: 20%;
   vertical-align: bottom;
   display: table-cell;
 }
