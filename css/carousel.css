@@ -1,0 +1,113 @@
+/*Colors*/
+.articles {
+  margin-top: 50px;
+  margin-bottom: 0;
+}
+.articles .featured-article {
+  position: relative;
+}
+.articles .featured-article .carousel-header {
+  position: absolute;
+  top: 10px;
+  left: 0;
+  z-index: 1;
+  color: #fff;
+  background-color: #36b8a4;
+}
+.articles .featured-article .carousel-header h1 {
+  font-size: 24px;
+  margin: 25px 35px 15px;
+  position: relative;
+  font-family: 'Gotham', "Arial", "Helvetica", sans-serif;
+}
+.articles .featured-article .carousel-header::after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-top: 15px solid #23917c;
+  border-left: 15px solid transparent;
+  position: absolute;
+  /*top: 32px;*/
+  left: 0;
+}
+.articles .carousel {
+  display: table;
+  width: 100%;
+}
+.articles .carousel .carousel-inner-container {
+  width: calc(100% - 25%);
+  position: relative;
+  vertical-align: bottom;
+  display: table-cell;
+}
+.articles .carousel .carousel-buttons {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: calc(100% - 88%);
+}
+.articles .carousel .carousel-buttons a {
+  width: 55px;
+  height: 55px;
+  /*margin: 0px 16px;*/
+  background-color: #999999;
+  background-image: none;
+  text-shadow: none;
+  opacity: 1;
+}
+.articles .carousel .carousel-buttons a:hover {
+  background-color: #666666;
+}
+.articles .carousel .carousel-buttons a img {
+  padding: 13px 20px;
+}
+.articles .carousel .carousel-aside-container {
+  width: calc(100% - 75%);
+  vertical-align: bottom;
+  display: table-cell;
+}
+.articles .carousel .carousel-aside-container ol.carousel-indicators {
+  position: relative;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  text-align: right;
+  font-weight: 100;
+  font-family: 'Gotham', "Arial", "Helvetica", sans-serif;
+  padding: 20px 0px;
+}
+.articles .carousel .carousel-aside-container ol.carousel-indicators li {
+  display: inline-block;
+  width: auto;
+  height: auto;
+  margin: 0;
+  text-indent: 0;
+  cursor: pointer;
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  padding: 0px 5px;
+}
+.articles .carousel .carousel-aside-container ol.carousel-indicators li.active {
+  color: #36b8a4;
+}
+.articles .carousel .carousel-aside-container .carousel-content {
+  background-color: #36b8a4;
+  color: #fff;
+  font-size: 34px;
+  font-family: 'Gotham', "Arial", "Helvetica", sans-serif;
+  padding: 15px;
+  font-weight: 100;
+  line-height: 45px;
+}
+.articles .carousel .carousel-aside-container .carousel-content p.date {
+  font-size: 18px;
+  border-top: 1px solid #ffffff;
+  padding-top: 20px;
+  margin-top: 5px;
+  line-height: normal;
+}
