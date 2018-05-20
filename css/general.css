@@ -42,7 +42,7 @@
   transform: translateY(0);
 }
 section.header {
-  padding-top: 68px;
+  padding-top: 48px;
   margin-bottom: 0px;
 }
 section.header h1 {
@@ -63,7 +63,7 @@ section.header p {
 }
 @media (min-width: 768px) {
   section.header {
-    padding-top: 98px;
+    padding-top: 78px;
   }
 }
 section.latest {
