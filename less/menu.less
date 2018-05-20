@@ -88,17 +88,18 @@ body{
     }
     @media screen and (max-width: 767px){
         top: 25px;
-        left: 25px;
+        right: 25px;
     }
 }
 
 .menu-wrapper{
 	position: absolute;
 	top: -200px;
-	right: -280px;
+	right: -100%;
 	width: 280px;
 	z-index: 10;
 	.transition(all 0.4s @easePower3);
+	.box-shadow(1px 1px 20px 0px rgba(0,0,0,0.2));
 
 	ul.main-menu{
 		list-style: none;
@@ -138,10 +139,13 @@ body{
 			text-transform: none;
 		}
 	}
-	.logo{
-		width: 240px;
-		padding: 20px 25px;
+	.logo-wrapper{
 		background-color: white;
+		width: 100%;
+		.logo{
+			width: 240px;
+			padding: 20px 25px;
+		}
 		img{
 			width: 100%;
 		}
