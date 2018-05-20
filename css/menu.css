@@ -1,0 +1,103 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Bold.eot');
+  src: url('../fonts/Gotham-Bold.woff2') format('woff2'), url('../fonts/Gotham-Bold.woff') format('woff'), url('../fonts/Gotham-Bold.ttf') format('truetype'), url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg'), url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Medium.eot');
+  src: url('../fonts/Gotham-Medium.woff2') format('woff2'), url('../fonts/Gotham-Medium.woff') format('woff'), url('../fonts/Gotham-Medium.ttf') format('truetype'), url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg'), url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Light.eot');
+  src: url('../fonts/Gotham-Light.woff2') format('woff2'), url('../fonts/Gotham-Light.woff') format('woff'), url('../fonts/Gotham-Light.ttf') format('truetype'), url('../fonts/Gotham-Light.svg#Gotham-Light') format('svg'), url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+/*
+  Colours
+*/
+/*
+    Mixins
+*/
+body {
+  font-family: 'Gotham', "Arial", "Helvetica", sans-serif;
+  position: relative;
+  background-color: white;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+}
+.menu-button {
+  position: absolute;
+  top: 35px;
+  right: 45px;
+  width: 30px;
+  height: 28px;
+  z-index: 11;
+  -webkit-transition: all 0.2s ease;
+  /* For Safari 3.1 to 6.0 */
+  transition: all 0.2s ease;
+}
+.menu-button #bar1,
+.menu-button #bar2,
+.menu-button #bar3 {
+  width: 30px;
+  height: 5px;
+  background-color: #36b8a4;
+  margin-bottom: 4px;
+  position: relative;
+}
+.menu-button:hover #bar1,
+.menu-button:hover #bar2,
+.menu-button:hover #bar3 {
+  background-color: #36b8a4;
+}
+.menu-button.on {
+  position: fixed;
+}
+.menu-button.on #bar1,
+.menu-button.on #bar2,
+.menu-button.on #bar3 {
+  background-color: #36b8a4;
+}
+.menu-button.on #bar1 {
+  -ms-transform: rotate(45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(45deg);
+  /* For Safari 3.1 to 6.0 */
+  transform: rotate(45deg);
+  top: 11px;
+  transition: transform 0.2s cubic-bezier(0.6, 0.01, 0.49, 0.99);
+  -webkit-transition: -webkit- transform 0.2s cubic-bezier(0.6, 0.01, 0.49, 0.99);
+}
+.menu-button.on #bar2 {
+  opacity: 0;
+}
+.menu-button.on #bar3 {
+  -ms-transform: rotate(-45deg);
+  /* IE 9 */
+  -webkit-transform: rotate(-45deg);
+  /* For Safari 3.1 to 6.0 */
+  transform: rotate(-45deg);
+  top: -7px;
+  transition: transform 0.2s cubic-bezier(0.6, 0.01, 0.49, 0.99);
+  -webkit-transition: -webkit- transform 0.2s cubic-bezier(0.6, 0.01, 0.49, 0.99);
+}
+@media screen and (max-width: 991px) {
+  .menu-button {
+    top: 28px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .menu-button {
+    top: 25px;
+    left: 25px;
+  }
+}

@@ -1,0 +1,127 @@
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Bold.eot');
+  src: url('../fonts/Gotham-Bold.woff2') format('woff2'),
+       url('../fonts/Gotham-Bold.woff') format('woff'),
+       url('../fonts/Gotham-Bold.ttf') format('truetype'),
+       url('../fonts/Gotham-Bold.svg#Gotham-Bold') format('svg'),
+       url('../fonts/Gotham-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Medium.eot');
+  src: url('../fonts/Gotham-Medium.woff2') format('woff2'),
+       url('../fonts/Gotham-Medium.woff') format('woff'),
+       url('../fonts/Gotham-Medium.ttf') format('truetype'),
+       url('../fonts/Gotham-Medium.svg#Gotham-Medium') format('svg'),
+       url('../fonts/Gotham-Medium.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/Gotham-Light.eot');
+  src: url('../fonts/Gotham-Light.woff2') format('woff2'),
+       url('../fonts/Gotham-Light.woff') format('woff'),
+       url('../fonts/Gotham-Light.ttf') format('truetype'),
+       url('../fonts/Gotham-Light.svg#Gotham-Light') format('svg'),
+       url('../fonts/Gotham-Light.eot?#iefix') format('embedded-opentype');
+  font-weight: 100;
+  font-style: normal;
+}
+
+@gotham: 'Gotham', "Arial","Helvetica",sans-serif;
+
+@easePower3: cubic-bezier(.6,.01,.49,.99);
+@easePower4: cubic-bezier(.43,0,0,.99);
+
+/*
+  Colours
+*/
+@textcolor: #58595B;
+@teal: #36B8A4;
+
+/*
+    Mixins
+*/
+.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+          box-shadow: @shadow;
+}
+.transition(@trans: all .2s linear){
+  -webkit-transition: @trans; /* For Safari 3.1 to 6.0 */
+        transition: @trans;
+}
+.transform(@tf){
+  -ms-transform: @tf; /* IE 9 */
+  -webkit-transform: @tf; /* For Safari 3.1 to 6.0 */
+        transform: @tf;
+}
+
+body{
+ 	font-family: @gotham;
+    position: relative;
+    background-color: white;
+    font-size: 16px;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+}
+
+.menu-button{
+    position: absolute;
+    top: 35px;
+    right: 45px;
+    width: 30px;
+    height: 28px;
+    z-index: 11;
+    .transition(all 0.2s ease);
+
+    #bar1, #bar2, #bar3{
+        width: 30px;
+        height: 5px;
+        background-color: @teal;
+        margin-bottom: 4px;
+        position: relative;
+
+    }
+    &:hover{
+        #bar1, #bar2, #bar3{
+            background-color: @teal;
+        }
+    }
+    &.on{
+        position: fixed;
+        
+        #bar1, #bar2, #bar3{
+            background-color: @teal;
+        }
+        @trans: transform 0.2s @easePower3;
+        #bar1{
+            .transform(rotate(45deg));
+            top: 11px;
+               transition: @trans;
+        -webkit-transition: -webkit-@trans;
+        }
+        #bar2{
+            opacity: 0;
+        }
+        #bar3{
+            .transform(rotate(-45deg));
+            top: -7px;
+           transition: @trans;
+           -webkit-transition: -webkit-@trans;
+        }
+      
+    }
+    @media screen and (max-width: 991px){
+        top: 28px;
+    }
+    @media screen and (max-width: 767px){
+        top: 25px;
+        left: 25px;
+    }
+}
