@@ -209,9 +209,9 @@
 	$(".menu-button").click(function(){
 		$(".menu-wrapper, .menu-button").toggleClass("on");
 	});
-	$(".dropdown").click(function(){
-		$(this).find(".dd-menu").toggle();
-		$(this).find(".dd-arrow").toggleClass("on");
+	$(".dropdown .dropdown-toggle").click(function(){
+		$(this).parent().find(".dd-menu").toggle();
+		$(this).parent().find(".dd-arrow").toggleClass("on");
 	})
 	$('a[href="#"').click(function(e){
 		e.preventDefault();

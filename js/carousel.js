@@ -18,4 +18,27 @@
             $('#carousel-text-a').html($('#slide-content-a-'+id).html());
     });
 
+    $("#article-carousel").swipe({
+
+      swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+        if (direction == 'left') $(this).carousel('next');
+        if (direction == 'right') $(this).carousel('prev');
+
+      },
+      allowPageScroll:"vertical"
+
+    });
+
+    $("#article-carousel-a").swipe({
+
+      swipe: function(event, direction, distance, duration, fingerCount, fingerData) {
+
+        if (direction == 'left') $(this).carousel('next');
+        if (direction == 'right') $(this).carousel('prev');
+
+      },
+      allowPageScroll:"vertical"
+
+    });
 })(jQuery);
