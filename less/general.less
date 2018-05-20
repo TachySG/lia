@@ -198,6 +198,56 @@ section.threebox{
   }
 
 }
+.modal-header{
+  border-bottom: 0;
+  padding-bottom: 0;
+}
+.modal-content{
+  border: 0;
+  text-align: center;
+  font-family: @gotham;
+}
+.modal-dialog{
+  position: absolute;
+  top: 40%;
+  left: 50%;
+}
+.modal.fade .modal-dialog, .modal.in .modal-dialog{
+  .transform(translate(-50%, -50%));
+}
+.modal-body{
+    text-align: center;
+}
+.modal-dialog {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  margin:0;
+}
+.modal.fade .modal-dialog,
+.modal.in .modal-dialog {
+  -ms-transform: translate(-50%, -50%);
+  /* IE 9 */
+  -webkit-transform: translate(-50%, -50%);
+  /* For Safari 3.1 to 6.0 */
+  transform: translate(-50%, -50%);
+
+}
+.proposal-btn{
+    background: #bf202f;
+    color:white;
+    border:none;
+    -webkit-appearance:none;
+    outline: none;
+    box-shadow: none;
+    padding:5px 10px;
+    margin:5px;
+}
+@media screen and (max-width: 575px){
+    .modal-dialog {
+        width: 80%;
+    }
+}
 footer{
   margin:50px 0 0px;
   background:#cccccc;
