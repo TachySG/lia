@@ -11,7 +11,7 @@
 }
 .articles .featured-article .carousel-header {
   position: absolute;
-  top: 10px;
+  top: 30px;
   left: 0;
   z-index: 1;
   color: #fff;
@@ -60,11 +60,11 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: calc(100% - 88%);
+  width: calc(100% - 745px);
 }
 @media screen and (max-width: 1200px) {
   .articles .carousel .carousel-buttons {
-    width: calc(100% - 85%);
+    width: calc(100% - 84.5%);
   }
 }
 @media screen and (max-width: 992px) {
