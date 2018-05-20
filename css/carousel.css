@@ -51,10 +51,11 @@
 }
 .articles .carousel .carousel-inner-container {
   /*width: ~"calc(100% - 25%)";*/
-  width: 73%;
+  width: 75%;
   position: relative;
   vertical-align: bottom;
-  display: table-cell;
+  /* display: table-cell; */
+  display: inline-block;
 }
 @media screen and (max-width: 992px) {
   .articles .carousel .carousel-inner-container {
@@ -113,9 +114,11 @@
 }
 .articles .carousel .carousel-aside-container {
   /*width: ~"calc(100% - 75%)";*/
-  width: 27%;
+  width: 24%;
   vertical-align: bottom;
-  display: table-cell;
+  /*display: table-cell;*/
+  display: inline-block;
+  margin-left: -4px;
 }
 @media screen and (max-width: 992px) {
   .articles .carousel .carousel-aside-container {
