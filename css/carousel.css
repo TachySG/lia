@@ -212,6 +212,10 @@
     font-size: 24px;
   }
 }
+.articles .carousel .carousel-aside-container .carousel-content a {
+  text-decoration: none;
+  color: #ffffff;
+}
 .articles .carousel .carousel-aside-container .carousel-content p.date {
   font-size: 18px;
   border-top: 1px solid #ffffff;
