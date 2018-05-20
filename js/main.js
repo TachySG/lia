@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 
 ;( function( window ) {
 	
@@ -205,10 +204,10 @@
 		new cbpScroller( document.getElementById( 'mainbody' ) );
 	});
 
-=======
+
 (function($){
 	$(".menu-button").click(function(){
 		$(".menu-wrapper, .menu-button").toggleClass("on");
 	});
 })(jQuery)
->>>>>>> db22508752bb9936be4b2ee1f4578e808ce345ba
+
