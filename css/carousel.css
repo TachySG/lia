@@ -1,4 +1,7 @@
 /*Colors*/
+/*
+  Mixins
+*/
 .articles {
   margin-top: 50px;
   margin-bottom: 0;
@@ -78,9 +81,13 @@
   background-image: none;
   text-shadow: none;
   opacity: 1;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
 }
 .articles .carousel .carousel-buttons a:hover {
   background-color: #666666;
+  transition: 0.4s ease;
+  -webkit-transition: 0.4s ease;
 }
 .articles .carousel .carousel-buttons a img {
   padding: 13px 20px;
@@ -131,7 +138,7 @@
 }
 @media screen and (max-width: 992px) {
   .articles .carousel .carousel-aside-container ol.carousel-indicators li {
-    border: 1px solid #36b8a4;
+    border: 1px solid #333333;
     border-radius: 100%;
     width: 15px;
     height: 15px;
@@ -146,6 +153,7 @@
   .articles .carousel .carousel-aside-container ol.carousel-indicators li.active {
     color: transparent;
     background-color: #36b8a4;
+    border: 1px solid #36b8a4;
   }
 }
 .articles .carousel .carousel-aside-container .carousel-content {
