@@ -16,6 +16,8 @@
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" type="text/css" href="css/menu.css">
+    <link rel="stylesheet" type="text/css" href="css/carousel.css">
+
 </head>
 
 <body>
@@ -44,6 +46,133 @@
         <div class="col-sm-9">
           <img src="img/header.jpg" class="img-responsive">
         </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured-article">
+    <div class="container">
+      <div class="row articles">
+          <div class="col-md-12 featured-article">
+              <div class="carousel-header">
+                  <h1>FEATURED GUIDE</h1>
+              </div>
+              <div id="article-carousel" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner-container">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner carousel slide" role="listbox" id="articleList">
+                        <div class="item active" data-slide-number="0">
+                          <img src="img/carousel/first-featured/article-1.jpg" alt="">
+                        </div>
+                        <div class="item" data-slide-number="1">
+                          <img src="img/carousel/first-featured/article-1.jpg" alt="">
+                        </div>
+                        <div class="item" data-slide-number="2">
+                          <img src="img/carousel/first-featured/article-1.jpg" alt="">
+                        </div>
+                      </div>
+
+                      <!-- Controls -->
+                      <div class="carousel-buttons">
+                          <a class="left carousel-control" href="#article-carousel" role="button" data-slide="prev">
+                            <img src="img/carousel/left-arrow.png" alt="">
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          
+                          <a class="right carousel-control" href="#article-carousel" role="button" data-slide="next">
+                            <img src="img/carousel/right-arrow.png" alt="">
+                            <span class="sr-only">Next</span>
+                          </a>
+                      </div>
+                  </div>
+                      
+                  <div class="carousel-aside-container">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#article-carousel" data-slide-to="0" class="active">1</li>
+                        <li data-target="#article-carousel" data-slide-to="1">2</li>
+                        <li data-target="#article-carousel" data-slide-to="2">3</li>
+                      </ol>
+                      <!-- display content -->
+                      <div class="display-content carousel-content" id="carousel-text"></div>
+
+                      <div class="carousel-contents" id="slide-content" style="display: none;">
+                          <div class="content" id="slide-content-0">
+                            YOUR GUIDE TO LIFE INSURANCE
+                            <p class="date">
+                              26/04/2017
+                            </p>
+                          </div>
+                          <div class="content" id="slide-content-1">YOUR GUIDE TO LIFE INSURANCE
+                            <p class="date">
+                              26/04/2017
+                            </p></div>
+                          <div class="content" id="slide-content-2">YOUR GUIDE TO LIFE INSURANCE
+                            <p class="date">
+                              26/04/2017
+                            </p></div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+          <!-- <div class="col-md-2">2</div> -->
+      </div>
+      <div class="row articles">
+          <div class="col-md-12 featured-article">
+              <div class="carousel-header">
+                  <h1>FEATURED ARTICLE</h1>
+              </div>
+              <div id="article-carousel-a" class="carousel slide" data-ride="carousel">
+                  <div class="carousel-inner-container">
+                      <!-- Wrapper for slides -->
+                      <div class="carousel-inner carousel slide" role="listbox" id="articleList">
+                        <div class="item a active" data-slide-number="0">
+                          <img src="img/carousel/first-featured/article-1.jpg" alt="">
+                        </div>
+                        <div class="item a" data-slide-number="1">
+                          <img src="img/carousel/first-featured/article-1.jpg" alt="">
+                        </div>
+                        <div class="item a" data-slide-number="2">
+                          <img src="img/carousel/first-featured/article-1.jpg" alt="">
+                        </div>
+                      </div>
+                      <!-- Controls -->
+                      <div class="carousel-buttons">
+                          <a class="left carousel-control" href="#article-carousel-a" role="button" data-slide="prev">
+                            <img src="img/carousel/left-arrow.png" alt="">
+                            <span class="sr-only">Previous</span>
+                          </a>
+                          
+                          <a class="right carousel-control" href="#article-carousel-a" role="button" data-slide="next">
+                            <img src="img/carousel/right-arrow.png" alt="">
+                            <span class="sr-only">Next</span>
+                          </a>
+                      </div>
+                  </div>
+                      
+                  <div class="carousel-aside-container">
+                      <!-- Indicators -->
+                      <ol class="carousel-indicators">
+                        <li data-target="#article-carousel-a" data-slide-to="0" class="active">1</li>
+                        <li data-target="#article-carousel-a" data-slide-to="1">2</li>
+                        <li data-target="#article-carousel-a" data-slide-to="2">3</li>
+                      </ol>
+                      <!-- display content -->
+                      <div class="display-content carousel-content" id="carousel-text-a"></div>
+
+                      <div class="carousel-contents" id="slide-content-a" style="display: none;">
+                          <div class="content" id="slide-content-a-0">
+                            RETIREMENT INCOME &ndash; HOW MUCH IS ENOUGH?
+                            <p class="date">
+                              05/05/2018
+                            </p>
+                          </div>
+                          <div class="content" id="slide-content-a-1">Content-2</div>
+                          <div class="content" id="slide-content-a-2">Content-3</div>
+                      </div>
+                  </div>
+              </div>
+          </div>
       </div>
     </div>
   </section>
@@ -84,6 +213,7 @@
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
   <script src="js/vendor/bootstrap.min.js"></script>
   <script src="js/plugins.js"></script>
+  <script src="js/carousel.js"></script>
   <script src="js/main.js"></script>
 
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
