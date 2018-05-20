@@ -19,10 +19,216 @@
   font-weight: 100;
   font-style: normal;
 }
+/*
+  Mixins
+*/
+.work-anim {
+  opacity: 0;
+  -ms-transform: translateY(2vh);
+  /* IE 9 */
+  -webkit-transform: translateY(2vh);
+  /* For Safari 3.1 to 6.0 */
+  transform: translateY(2vh);
+  -webkit-transition: all 0.8s ease;
+  /* For Safari 3.1 to 6.0 */
+  transition: all 0.8s ease;
+}
+.work-anim.animate {
+  opacity: 1;
+  -ms-transform: translateY(0);
+  /* IE 9 */
+  -webkit-transform: translateY(0);
+  /* For Safari 3.1 to 6.0 */
+  transform: translateY(0);
+}
+section.header {
+  padding-top: 48px;
+  margin-bottom: 0px;
+}
+section.header h1 {
+  font-size: 34px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section.header h1 {
+    font-size: 28px;
+  }
+}
+section.header p {
+  font-size: 24px;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section.header p {
+    font-size: 18px;
+  }
+}
+@media (min-width: 768px) {
+  section.header {
+    padding-top: 78px;
+  }
+}
+section.latest {
+  position: relative;
+  text-align: center;
+  background: #36b8a4;
+  color: white;
+  padding: 25px 0;
+  margin: 50px 0 0px;
+  font-size: 18px;
+}
+section.latest span.labelinput {
+  font-size: 18px;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  section.latest span.labelinput {
+    width: auto;
+  }
+}
+section.latest input {
+  -webkit-appearance: none;
+  outline: none;
+  box-shadow: none;
+  border: none;
+  margin: 10px 0 0;
+  width: 80%;
+  max-width: 360px;
+  color: #808080;
+  padding: 5px 10px;
+}
+section.latest input::placeholder {
+  color: #bbb;
+}
+@media (min-width: 768px) {
+  section.latest input {
+    width: auto;
+    max-width: none;
+    margin: 0 10px;
+  }
+}
+section.threebox {
+  position: relative;
+  margin: 50px 0 0;
+}
+section.threebox .box_overlay {
+  width: 100%;
+  height: 100%;
+  background: #36b8a4;
+  opacity: 0;
+  z-index: 1;
+  -webkit-transition: opacity 0.4s ease;
+  /* For Safari 3.1 to 6.0 */
+  transition: opacity 0.4s ease;
+}
+section.threebox .box {
+  cursor: pointer;
+  height: calc(50vw - 30px);
+  margin-top: 15px;
+}
+@media (min-width: 768px) {
+  section.threebox .box {
+    height: 220px;
+    margin-top: 0;
+  }
+}
+@media (min-width: 992px) {
+  section.threebox .box {
+    height: 293.33px;
+  }
+}
+@media (min-width: 1200px) {
+  section.threebox .box {
+    height: 360px;
+  }
+}
+section.threebox .box:hover .box_overlay,
+section.threebox .box:active .box_overlay,
+section.threebox .box:focus .box_overlay {
+  opacity: 1;
+}
+section.threebox .box1 {
+  background: url("../img/3box_1.jpg");
+  background-size: cover;
+  margin-top: 0;
+}
+section.threebox .box2 {
+  background: url("../img/3box_2.jpg");
+  background-size: cover;
+  background-position: center 40%;
+}
+section.threebox .box3 {
+  background: url("../img/3box_3.jpg");
+  background-position: center 60%;
+  background-size: cover;
+}
+section.threebox .box_text {
+  position: absolute;
+  font-family: 'Gotham', "Arial", "Helvetica", sans-serif;
+  font-weight: normal;
+  top: 30px;
+  left: 40px;
+  font-size: 24px;
+  color: white;
+  z-index: 2;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section.threebox .box_text {
+    font-size: 20px;
+    top: 27px;
+    left: 20px;
+  }
+}
+section.threebox .right_arrow {
+  width: 40px;
+  height: auto;
+  position: absolute;
+  right: 25px;
+  top: 26px;
+  z-index: 2;
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section.threebox .right_arrow {
+    width: 30px;
+    right: 5px;
+  }
+}
+footer {
+  margin: 50px 0 25px;
+}
 footer .footer .copyright {
   font-family: 'Gotham', "Arial", "Helvetica", sans-serif;
   font-weight: 100;
   font-size: 14px;
+}
+footer .footer .menu-footer {
+  margin: 15px 0;
+}
+footer .footer .menu-footer ul {
+  padding: 0;
+}
+footer .footer .menu-footer ul li {
+  list-style: none;
+  display: block;
+  margin-right: 20px;
+}
+footer .footer .menu-footer ul li a {
+  text-decoration: none !important;
+  color: #333 !important;
+}
+footer .footer .menu-footer ul li:nth-child(3) {
+  margin-right: 0;
+}
+@media (min-width: 768px) {
+  footer .footer .menu-footer ul li {
+    display: inline-block;
+  }
+}
+@media (min-width: 992px) {
+  footer .footer .menu-footer {
+    margin: 0;
+  }
+}
+footer .footer .logo {
+  max-width: 280px;
 }
 footer .footer .logo img {
   width: 100%;

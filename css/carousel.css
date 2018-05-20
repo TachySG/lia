@@ -1,6 +1,7 @@
 /*Colors*/
 .articles {
-  margin-top: 20px;
+  margin-top: 50px;
+  margin-bottom: 0;
 }
 .articles .featured-article {
   position: relative;

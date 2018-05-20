@@ -20,7 +20,7 @@
 
 </head>
 
-<body>
+<body id="mainbody">
   <!--[if lte IE 9]>
     <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
   <![endif]-->
@@ -31,33 +31,40 @@
       <div id="bar2"></div>
       <div id="bar3"></div>
   </div>
-   <div class="menu-wrapper">
-      <ul class="main-menu">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
-            <ul class="dropdown-menu">
-              <li><a href="#">Action</a></li>
-              <li><a href="#">Another action</a></li>
-              <li><a href="#">Something else here</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">Separated link</a></li>
-              <li role="separator" class="divider"></li>
-              <li><a href="#">One more separated link</a></li>
-            </ul>
-          </li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Proposal</a></li>
-      </ul>
-      <div class="logo">
-          <img src="images/logo.png" alt="">
-      </div>
-  </div>
+  <div class="cont">
+     <div class="menu-wrapper">
+        <ul class="main-menu">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Resources</a>
+              <div class="dd-arrow"><img src="images/arrow.png" alt="arrow"></div>
+              <ul class="dd-menu">
+                <li><a href="#">Resource  Library</a></li>
+                <li><a href="#">Digital Insurance Calculator</a></li>
+                <li><a href="#">Consumer Guides</a></li>
+                <li><a href="#">Unclaimed Proceeds</a></li>
+                <li><a href="#">Useful Links</a></li>
+              </ul>
+            </li>
+            <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">News</a>
+              <div class="dd-arrow"><img src="images/arrow.png" alt="arrow"></div>
+              <ul class="dd-menu">
+                <li><a href="#">Articles</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">LIA Newsletter</a></li>
+              </ul>
+            </li>
+            <li><a href="#">Contact Us</a></li>
+            <li><a href="#">Proposal</a></li>
+        </ul>
+        <div class="logo">
+            <img src="images/logo.png" alt="">
+        </div>
+    </div>
   <section class="header">
     <div class="container">
       <div class="row">
-        <div class="col-sm-3">
+        <div class="col-sm-4">
           <div class="header-text">
             <h1>LIFE INSURANCE
     ASSOCIATION
@@ -65,14 +72,20 @@
             <p>Everything you need to know about life insurance.</p>
           </div>
         </div>
-        <div class="col-sm-9">
+        <div class="col-sm-8">
           <img src="img/header.jpg" class="img-responsive">
         </div>
       </div>
     </div>
   </section>
 
-  <section class="featured-article">
+  <section class="latest work-anim">
+    <div class="container">
+      <span class="labelinput">Get the latest on life insurance in your&nbsp;inbox</span><input type="text" placeholder="E-Mail">
+    </div>
+  </section>
+
+  <section class="featured-article work-anim">
     <div class="container">
       <div class="row articles">
           <div class="col-md-12 featured-article">
@@ -139,6 +152,94 @@
           </div>
           <!-- <div class="col-md-2">2</div> -->
       </div>
+    </div>
+  </section>
+
+
+  <section class="threebox">
+    <div class="container">
+      <div class="row">
+        <!-- box 1 -->
+        <div class="col-sm-4">
+          <div class="box box1 work-anim">
+            <div class="box_overlay">
+
+            </div>
+            <div class="box_text">
+              NEWS
+            </div>
+            <div class="right_arrow">
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+              </style>
+              <path class="st0" d="M4.7,98.8l-2.1-2.2l45.3-45.3c0.5-0.5,0.5-1.4,0-2L2.6,4.2L4.7,2c0.5-0.5,1.4-0.5,1.9,0l47.5,47.4
+                c0.5,0.5,0.5,1.4,0,2L6.6,98.8C6.1,99.4,5.2,99.4,4.7,98.8L4.7,98.8z"/>
+              </svg>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- box 2-->
+        <div class="col-sm-4">
+          <div class="box box2 work-anim">
+            <div class="box_overlay">
+
+            </div>
+            <div class="box_text">
+              INSURANCE<br>
+              CALCULATOR
+            </div>
+            <div class="right_arrow">
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+              </style>
+              <path class="st0" d="M4.7,98.8l-2.1-2.2l45.3-45.3c0.5-0.5,0.5-1.4,0-2L2.6,4.2L4.7,2c0.5-0.5,1.4-0.5,1.9,0l47.5,47.4
+                c0.5,0.5,0.5,1.4,0,2L6.6,98.8C6.1,99.4,5.2,99.4,4.7,98.8L4.7,98.8z"/>
+              </svg>
+
+
+            </div>
+          </div>
+        </div>
+        <!-- box 3 -->
+        <div class="col-sm-4">
+          <div class="box box3 work-anim">
+            <div class="box_overlay">
+
+            </div>
+            <div class="box_text">
+              BLOG
+            </div>
+            <div class="right_arrow">
+              <?xml version="1.0" encoding="utf-8"?>
+              <!-- Generator: Adobe Illustrator 22.0.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+              <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+                 viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+              <style type="text/css">
+                .st0{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;}
+              </style>
+              <path class="st0" d="M4.7,98.8l-2.1-2.2l45.3-45.3c0.5-0.5,0.5-1.4,0-2L2.6,4.2L4.7,2c0.5-0.5,1.4-0.5,1.9,0l47.5,47.4
+                c0.5,0.5,0.5,1.4,0,2L6.6,98.8C6.1,99.4,5.2,99.4,4.7,98.8L4.7,98.8z"/>
+              </svg>
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="featured-article work-anim">
+    <div class="container">
       <div class="row articles">
           <div class="col-md-12 featured-article">
               <div class="carousel-header">
@@ -206,38 +307,36 @@
       </div>
     </div>
   </section>
-
-  <section class="latest">
-    <div class="container-fluid">
-
-    </div>
-  </section>
-
   <footer>
     <div class="footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-3">
-            <div class="copyright">
-              &copy;&nbsp;Life Insurance Association of Singapore
-            </div>
-          </div>
-          <div class="col-sm-6">
-            <div class="menu-footer">
-              Terms of Use
-              Privacy Policy
-              Contact Us
-            </div>
-          </div>
-          <div class="col-sm-3">
+          <div class="col-md-3 col-md-push-9">
             <div class="logo">
               <img src="img/lia-logo.png">
+            </div>
+          </div>
+          
+          <div class="col-md-5 col-md-push-1">
+            <div class="menu-footer">
+              <ul>
+                <li><a href="#">Terms of Use</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact Us</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 col-md-pull-8">
+            <div class="copyright">
+              &copy;&nbsp;Life Insurance Association of&nbsp;Singapore
             </div>
           </div>
         </div>
       </div>
     </div>
   </footer>
+  </div>
+  
   <script src="js/vendor/modernizr-3.6.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>

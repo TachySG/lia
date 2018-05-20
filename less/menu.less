@@ -38,7 +38,12 @@ body{
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
 }
-
+.cont{
+	width: 100%;
+	height: 100%;
+	position: relative;
+	overflow: hidden;
+}
 .menu-button{
     position: absolute;
     top: 35px;
@@ -54,19 +59,18 @@ body{
         background-color: @teal;
         margin-bottom: 4px;
         position: relative;
-        .transition(background-color 0.5s linear);
+        .transition(background-color 0.4s linear);
     }
   
     &.on{
-        position: fixed;
         #bar1, #bar2, #bar3{
             background-color: white;
         }
         #bar1{
             .transform(rotate(45deg));
             top: 11px;
-               		transition: transform 0.2s @easePower3, background-color 0.2s linear 0.5s;
-    		    -webkit-transition: -webkit-transform 0.2s @easePower3, background-color 0.2s linear 0.5s;
+    		    -webkit-transition: -webkit-transform 0.2s @easePower3, background-color 0.2s linear 0.4s;
+               		transition: transform 0.2s @easePower3, background-color 0.2s linear 0.4s;
         }
         #bar2{
             opacity: 0;
@@ -74,8 +78,8 @@ body{
         #bar3{
             .transform(rotate(-45deg));
             top: -7px;
-          		transition: transform 0.2s @easePower3, background-color 0.2s linear 0.5s;
-		    -webkit-transition: -webkit-transform 0.2s @easePower3, background-color 0.2s linear 0.5s;
+		    -webkit-transition: -webkit-transform 0.2s @easePower3, background-color 0.2s linear 0.4s;
+          		transition: transform 0.2s @easePower3, background-color 0.2s linear 0.4s;
         }
       
     }
@@ -90,8 +94,8 @@ body{
 
 .menu-wrapper{
 	position: absolute;
-	top: -100px;
-	right: -100%;
+	top: -200px;
+	right: -280px;
 	width: 280px;
 	z-index: 10;
 	.transition(all 0.4s @easePower3);
@@ -100,11 +104,12 @@ body{
 		list-style: none;
 		padding: 0;
 		margin: 0;
-		padding: 80px 25px 15px;
+		padding: 80px 45px 15px 25px;
 		background: @teal;
 	}
 	li{
 		border-bottom: 1px solid white;
+		position: relative;
 		a{
 			text-transform: uppercase;
 			font-weight: 100;
@@ -121,6 +126,18 @@ body{
 	li:last-child{
 		border-bottom: 0;
 	}
+	.dd-menu{
+		list-style: none;
+		padding: 0;
+		margin: 0;
+		border-top: 1px solid white;
+		display: none;
+		li a{
+			padding: 10px 0;
+			font-size: 85%;
+			text-transform: none;
+		}
+	}
 	.logo{
 		width: 240px;
 		padding: 20px 25px;
@@ -132,5 +149,18 @@ body{
 	&.on{
 		top: 0;
 		right: 0;
+	}
+	.dd-arrow{
+		position: absolute;
+		top: 15px;
+		right: -4px;
+		width: 24px;
+		.transform(rotate(-90deg));
+		img{
+			width: 100%;
+		}
+		&.on{
+			.transform(rotate(0deg));
+		}
 	}
 }
