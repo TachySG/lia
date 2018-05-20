@@ -22,7 +22,13 @@
                 font-size: 24px;
                 margin: 25px 35px 15px;
                 position: relative;
+                font-weight: bold;
                 font-family: @gotham;
+
+                @media screen and (max-width: 992px){
+                    font-size: 18px;
+                    margin: 15px 25px 10px;
+                }
             }
             &::after {
                 content: "";
@@ -45,12 +51,23 @@
             position: relative;
             vertical-align: bottom;
             display: table-cell;
+            @media screen and (max-width: 992px){
+                width:100%;
+                display: table;
+            }
         }
        .carousel-buttons {
             position: absolute;
             top: 0;
             right: 0;
             width: ~"calc(100% - 88%)";
+            @media screen and (max-width: 1200px){
+                width: ~"calc(100% - 85%)";
+            }
+            @media screen and (max-width: 992px){
+                width: 100%;
+                top: ~"calc(100% - 55%)";
+            }
             a {
                 width: 55px;
                 height: 55px;
@@ -71,7 +88,11 @@
             width: ~"calc(100% - 75%)";
             vertical-align: bottom;
             display: table-cell;
-
+            @media screen and (max-width: 992px){
+                width:100%;
+                display: table;
+                margin-top: -63px;
+            }
             ol.carousel-indicators {
                 position: relative;
                 top: 0;
@@ -85,6 +106,10 @@
                 font-weight: 100;
                 font-family: @gotham;
                 padding: 20px 0px;
+                @media screen and (max-width: 992px){
+                    text-align: center;
+                    top:10px;
+                }
                 li {
                     display: inline-block;
                     width: auto; 
@@ -96,8 +121,20 @@
                     border:none;
                     border-radius: 0; 
                     padding: 0px 5px;
+                    @media screen and (max-width: 992px){
+                        border: 1px solid @green;
+                        border-radius: 100%;
+                        width: 15px;
+                        height: 15px;
+                        text-align: center;
+                        color: transparent;
+                    }
                     &.active {
-                        color:@green;                    
+                        color:@green;   
+                        @media screen and (max-width: 992px){
+                            color: transparent;
+                            background-color: @green;
+                        }                 
                     }
                 }
             }
@@ -110,6 +147,12 @@
                 padding: 15px;
                 font-weight: 100;
                 line-height: 45px;
+                @media screen and (max-width: 992px){
+                    line-height: normal;
+                }
+                @media screen and (max-width: 500px) {
+                    font-size: 24px;
+                }
                 p {
                     &.date {
                         font-size: 18px;
