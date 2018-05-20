@@ -77,7 +77,8 @@
             position: relative;
             vertical-align: bottom;
             /* display: table-cell; */
-            display: inline-block;
+            display:block;
+            float:left;
             @media screen and (max-width: 992px){
                 width:100%;
                 display: table;
@@ -126,15 +127,28 @@
         }
         .carousel-aside-container {
             /*width: ~"calc(100% - 75%)";*/
-            width: 24%;
+            width: 25%;
             vertical-align: bottom;
             /*display: table-cell;*/
-            display: inline-block;
-            margin-left: -4px;
-            @media screen and (max-width: 992px){
+            display:block;
+            float:left;
+            position: relative;
+            height:605px;
+            .bottom-container{
+                @media screen and (min-width: 992px){
+                    position: absolute;
+                    bottom:0;
+                }
+
+            }
+            @media screen and (max-width: 991px){
                 width:100%;
                 display: table;
                 margin-top: -63px;
+                height:auto;
+            }
+            @media screen and (min-width:992px) and (max-width: 1200px){
+                height:499px;
             }
             ol.carousel-indicators {
                 position: relative;
