@@ -213,6 +213,10 @@
 		$(this).parent().find(".dd-menu").toggle();
 		$(this).parent().find(".dd-arrow").toggleClass("on");
 	})
+	$('a[href="#"').click(function(e){
+		e.preventDefault();
+		$('#popup-01').modal('show');
+	})
 })(jQuery)
 
 
