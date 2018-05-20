@@ -50,7 +50,8 @@
   width: 100%;
 }
 .articles .carousel .carousel-inner-container {
-  width: calc(100% - 25%);
+  /*width: ~"calc(100% - 25%)";*/
+  width: 75%;
   position: relative;
   vertical-align: bottom;
   display: table-cell;
@@ -65,7 +66,8 @@
   position: absolute;
   top: 0;
   right: 0;
-  width: calc(100% - 745px);
+  /*width: ~"calc(100% - 745px)";*/
+  width: 110px;
 }
 @media screen and (max-width: 1200px) {
   .articles .carousel .carousel-buttons {
