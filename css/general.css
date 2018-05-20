@@ -306,3 +306,7 @@ footer .footer .logo img {
   width: 100%;
   height: auto;
 }
+_:-ms-fullscreen,
+:root .right_arrow {
+  top: -26px !important;
+}
