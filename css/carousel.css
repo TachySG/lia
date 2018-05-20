@@ -19,7 +19,7 @@
 }
 @media screen and (max-width: 500px) {
   .articles .featured-article .carousel-header {
-    top: 5px;
+    top: 10px;
   }
 }
 .articles .featured-article .carousel-header h1 {
