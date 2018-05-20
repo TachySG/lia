@@ -5,6 +5,27 @@
 @darkgreen: #23917c;
 @gray: #999999;
 @darkgray: #666666;
+@black: #333333;
+
+@easePower3: cubic-bezier(.6,.01,.49,.99);
+@easePower4: cubic-bezier(.43,0,0,.99);
+
+/*
+  Mixins
+*/
+.box-shadow(@shadow: 0 1px 3px rgba(0,0,0,.25)) {
+  -webkit-box-shadow: @shadow; // iOS <4.3 & Android <4.1
+          box-shadow: @shadow;
+}
+.transition(@trans: all .2s linear){
+  -webkit-transition: @trans; /* For Safari 3.1 to 6.0 */
+        transition: @trans;
+}
+.transform(@tf){
+  -ms-transform: @tf; /* IE 9 */
+  -webkit-transform: @tf; /* For Safari 3.1 to 6.0 */
+        transform: @tf;
+}
 
 .articles {
     margin-top: 50px;
@@ -13,11 +34,15 @@
         position: relative;
         .carousel-header {
             position: absolute;
-            top: 10px;
+            top: 30px;
             left: 0;
             z-index: 1;
             color: #fff;
             background-color: @green;
+            @media screen and (max-width: 500px){
+                top:5px;
+            }
+
             h1 {
                 font-size: 24px;
                 margin: 25px 35px 15px;
@@ -60,9 +85,9 @@
             position: absolute;
             top: 0;
             right: 0;
-            width: ~"calc(100% - 88%)";
+            width: ~"calc(100% - 745px)";
             @media screen and (max-width: 1200px){
-                width: ~"calc(100% - 85%)";
+                width: ~"calc(100% - 84.5%)";
             }
             @media screen and (max-width: 992px){
                 width: 100%;
@@ -76,11 +101,23 @@
                 background-image: none;
                 text-shadow: none;
                 opacity: 1;
+                transition: 0.4s ease;
+                -webkit-transition: 0.4s ease;
+                @media screen and (max-width: 500px){
+                    width: 40px;
+                    height: 40px;
+                }
                 &:hover {
                     background-color: @darkgray;
+                    transition: 0.4s ease;
+                    -webkit-transition: 0.4s ease;
                 }
                 img {
                     padding: 13px 20px;
+                    @media screen and (max-width: 500px) {
+                        padding: 10px 15px;
+                        width: 100%;
+                    }
                 }
             }
         }
@@ -108,7 +145,7 @@
                 padding: 20px 0px;
                 @media screen and (max-width: 992px){
                     text-align: center;
-                    top:10px;
+                    top:15px;
                 }
                 li {
                     display: inline-block;
@@ -121,20 +158,37 @@
                     border:none;
                     border-radius: 0; 
                     padding: 0px 5px;
+                    transition: 0.4s ease;
+                    -webkit-transition: 0.4s ease;
                     @media screen and (max-width: 992px){
-                        border: 1px solid @green;
+                        border: 1px solid @black;
                         border-radius: 100%;
                         width: 15px;
                         height: 15px;
                         text-align: center;
                         color: transparent;
                     }
+                    @media screen and (max-width: 768px) {
+                        width: 12px;
+                        height: 12px;
+                    }
                     &.active {
-                        color:@green;   
+                        color:@green;  
+                        transition: 0.4s ease;
+                        -webkit-transition: 0.4s ease; 
                         @media screen and (max-width: 992px){
                             color: transparent;
                             background-color: @green;
+                            border: 1px solid @green;
                         }                 
+                    }
+                    &:hover {
+                        color: @green;
+                        transition: 0.4s ease;
+                        -webkit-transition: 0.4s ease;
+                        @media screen and (max-width: 992px){
+                            color: transparent;
+                        }
                     }
                 }
             }
