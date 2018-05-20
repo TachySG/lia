@@ -19,3 +19,12 @@
   font-weight: 100;
   font-style: normal;
 }
+footer .footer .copyright {
+  font-family: 'Gotham', "Arial", "Helvetica", sans-serif;
+  font-weight: 100;
+  font-size: 14px;
+}
+footer .footer .logo img {
+  width: 100%;
+  height: auto;
+}
