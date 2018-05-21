@@ -106,7 +106,7 @@ section.latest input::placeholder {
   }
 }
 section.latest .submit-btn {
-  padding: 4px 12px;
+  padding: 5px 12px;
   border-radius: 0;
   background: #2a9181;
   -webkit-appearance: none !important;
