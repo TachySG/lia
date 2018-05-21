@@ -102,7 +102,32 @@ section.latest input::placeholder {
   section.latest input {
     width: auto;
     max-width: none;
-    margin: 0 10px;
+    margin: 0 0 0 10px;
+  }
+}
+section.latest .submit-btn {
+  padding: 4px 12px;
+  border-radius: 0;
+  background: #2a9181;
+  -webkit-appearance: none !important;
+  outline: 0 !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+section.latest .submit-btn.active,
+section.latest .submit-btn:focus,
+section.latest .submit-btn:hover {
+  background: #1f695e;
+  color: white;
+  text-decoration: none;
+}
+section.latest .submit-btn:focus {
+  background: #13423b;
+}
+@media (max-width: 500px) {
+  section.latest .submit-btn {
+    width: 80%;
+    margin-top: 10px;
   }
 }
 section.threebox {

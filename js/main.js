@@ -221,6 +221,10 @@
 		e.preventDefault();
 		$('#popup-01').modal('show');
 	})
+	$('button').click(function(e){
+		e.preventDefault();
+		$('#popup-01').modal('show');
+	})
 })(jQuery)
 
 

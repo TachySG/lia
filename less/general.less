@@ -117,7 +117,28 @@ section.latest{
     @media (min-width: 768px){
       width: auto;
       max-width: none;
-      margin:0 10px;
+      margin:0 0 0 10px;
+    }
+  }
+  .submit-btn{
+    padding:4px 12px;
+    border-radius: 0;
+    background:darken(@teal,10%);
+    -webkit-appearance:none !important;
+    outline: 0 !important;
+    border:none !important;
+    box-shadow: none !important;
+    &.active, &:focus, &:hover {
+      background:darken(@teal,20%);
+      color: white;
+      text-decoration: none;
+    }
+    &:focus{
+      background:darken(@teal,30%);
+    }
+    @media (max-width: 500px){
+      width:80%;
+      margin-top:10px;
     }
   }
 }
